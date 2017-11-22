@@ -24,7 +24,7 @@ html {
 
 /* Responsive typography */
 html {
-    font-size: 14px;
+    font-size: 15px;
   }
   
   /* 
@@ -103,10 +103,10 @@ html {
   background-repeat: no-repeat;
   background-position: center;
   background-size: auto; 
+  opacity: 0.7;
   
 }
 .display-3{
-  font-size: 8px;
   font-family: Arial black;
   color:black;
   text-shadow: 2px 2px blue;
@@ -114,11 +114,11 @@ html {
 
 
   .display-4{
-    font-size: 10px;
     font-family: Arial Black;
     font-style: normal;
     text-align: justify;
-    
+    color: pink;
+      
   }
 
   .design{

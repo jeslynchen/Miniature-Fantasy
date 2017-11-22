@@ -24,7 +24,7 @@ html {
 
 /* Responsive typography */
 html {
-    font-size: 14px;
+    font-size: 15px;
   }
   
   /* 
@@ -92,11 +92,8 @@ html {
 }
 
 .jumbotron {
-  /* background-image: url("images/Little-twin-stars-christmas.png"); */
-  /* background-color: #17234E; */
-  /* width: 100%; /* make sure to define width to fill container */
-  /* height: 500px; define the height in pixels or make sure   */
-    background-image: url("images/Little-twin-stars-christmas.png");
+
+  background-image: url("images/Little-twin-stars-christmas.png");
   height: 75vh;
   width:100%;
   background-attachment: fixed;
@@ -114,15 +111,15 @@ html {
   color:black;
 }
 .lead{
-  font-size: 30px;
   color: black;
   }
 
   .display-4{
-    font-size: 10px;
+  
     font-family: Arial Black;
     font-style: normal;
     text-align: justify;
+    color:cyan;
     
   }
   .design{
