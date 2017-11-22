@@ -1,1 +1,2 @@
 # Miniature-Fantasy
+New info
