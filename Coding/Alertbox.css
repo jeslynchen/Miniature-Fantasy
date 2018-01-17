@@ -1,0 +1,83 @@
+/* 
+    IBM In-house {Web Coder} course Assignment Snippet.
+    CSS file.
+    For internal IBM use.
+*/
+
+
+/*  ----- HTML Body Styles -----  */
+
+
+
+
+#dialogoverlay {
+  display: none;
+  opacity: 0.8;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  background: #FFF;
+  width: 100%;
+  z-index: 10;
+}
+
+#dialogbox {
+  display: none;
+  position: fixed;
+  background: #000;
+  border-radius: 7px;
+  width: 550px;
+  z-index: 10;
+}
+
+#dialogbox>div {
+  background: #FFF;
+  margin: 8px;
+}
+
+#dialogbox>div>#dialogboxhead {
+  background: #666;
+  font-size: 19px;
+  padding: 10px;
+  color: #ccc;
+}
+
+#dialogbox>div>#dialogboxbody {
+  background: #333;
+  padding: 20px;
+  color: #FFF;
+}
+
+#dialogbox>div>#dialogboxfoot {
+  background: #666;
+  padding: 10px;
+  text-align: right;
+}
+
+.my-face {
+  display: block;
+  height: 150px;
+  width: 150px;
+  border-radius:12px;
+  Border: 1px solid #aaa;
+  margin: auto;
+  }
+  /* ROW2: History  */
+.container-fluid{
+  font-size: 8px;
+  font-family: Arial Black;
+  background-color: rgba(255, 192, 203, 0.8);
+  font-style: normal;
+}
+
+/* All row  */
+.row{
+  font-family: Arial Black;
+  font-style: normal;
+}
+/* Start of Footer */
+.design{
+  font-family: Arial;
+  color: white;
+  text-align: center;
+}

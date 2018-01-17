@@ -5,34 +5,28 @@
 */
 
 // JavaSCript goes here...
+// GETTING ALL INPUT TEXT
 
-// function submitData(){
-//     var form =document.getElementId('myFrom');
-//     google.script.run.withFailureHandler(alert).withSuccessHandler(alret)
-// }
 function check_info() {
-
-    if (document.getElementById('name-id').value == "") {
-        // alert('Please enter your name');      
-        return false;
-    } else {
-        if (document.getElementById('email-id').value == "") {
-            // alert('Please enter your Email');          
+    
+        if (document.getElementById('name-id').value == "") {
+            // alert('Please enter your name');      
             return false;
+        } else {
+            if (document.getElementById('email-id').value == "") {
+                // alert('Please enter your Email');          
+                return false;
+            }
+            else {
+                // Alert.ok('Thank you for Subscrible with Us');
+                // alert('Thank you for Subscrible with Us');    
+                Alert.render('Thank you for subscribing with us'); 
+                return true;            
+    
+            }
         }
-        else {
-
-            // alert('Thank you for Subscrible with Us');    
-            Alert.render('Thank you for subscribing with us'); 
-            return true;
-
-        }
+    
     }
-
-}
-// It is able to clear the form but not able to display the message
-
-
 function CustomAlert() {
     this.render = function (dialog) {
         var winW = window.innerWidth;
@@ -43,7 +37,7 @@ function CustomAlert() {
         dialogoverlay.style.height = winH + "px";
 
         // Box
-        dialogbox.style.left = (winW / 2) - (550 * 0.5) + "px";
+        dialogbox.style.left = (winW/2) - (550 * 0.5)+"px";
         dialogbox.style.top = "100px";
         dialogbox.style.display = "block";
         // Message
@@ -54,12 +48,14 @@ function CustomAlert() {
     this.ok = function () {
 
         document.getElementById('dialogbox').style.display = "none";
-        document.getElementById('dialogoverlay').style.display = "none";      
+        document.getElementById('dialogoverlay').style.display = "none";
         document.getElementById('myForm').reset();
 
 
     }
 }
 var Alert = new CustomAlert();
+
+
 
 
